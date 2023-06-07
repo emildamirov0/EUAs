@@ -67,7 +67,7 @@ model = Sequential()
 model.add(InputLayer((3,6)))
 model.add(LSTM(50, return_sequences=True))
 model.add(LSTM(50))
-model.add(Dense(25, 'relu'))
+model.add(Dense(25, 'sigmoid'))
 model.add(Dense(1, 'linear'))
 model.summary()
 
